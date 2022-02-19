@@ -1,0 +1,75 @@
+//1//
+let ages= [ 3, 9, 23, 64, 2, 8, 28, 93]
+for (let i=0; i< ages.length; i++){
+    ages[7] - ages[0];
+}
+
+
+ages.push(53);
+console.log(ages);
+
+let total = 0;
+for(let i = 0; i < ages.length; i++) {
+    total += ages[i];
+}
+let avg = total / ages.length;
+console.log(avg);
+
+
+
+//2//
+
+let names= ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"]
+let lengths= names.map(function(element) {
+    return element.lengths;
+});                    
+
+let average = names.join('').length / names.length     
+console.log(average)
+
+//names with spaces//
+let sums= names.reduce(function(accumulator, currentValue){
+    return accumulator + " " + currentValue
+}); console.log(sums);
+
+//5/-6//
+
+let nameLenghts= [3, 5, 3, 5, 4, 3]
+let x = nameLenghts.reduce((partialSum, a) => partialSum + a, 0);
+console.log(x);
+
+//7//
+
+
+
+//8//
+
+function createFullName(firstName, lastName){
+    return firstName + " " + lastName; 
+}
+let fullName= createFullName("Justin", "Lill");
+console.log(fullName);
+
+
+//9//
+
+let numbers= [20, 30, 5, 10, 50, 11]
+let amount = numbers.reduce((partialSum, a) => partialSum + a, 0);
+if(amount> 100){
+    console.log(true);
+}
+else{
+    console.log(false);
+}
+
+//10//
+
+let number= [20, 50, 40, 56, 3, 45]
+let sumOfNumbers= number.reduce((partialSum, a) => partialSum + a, 0);
+console.log(sumOfNumbers);
+
+
+//11//
+
+//12//
+
